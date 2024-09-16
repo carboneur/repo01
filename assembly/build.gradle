@@ -1,0 +1,19 @@
+plugins {
+    id 'application' 
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	implementation 'com.opencsv:opencsv:5.9'        
+}
+
+application {
+    mainClass = 'demo.App'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
